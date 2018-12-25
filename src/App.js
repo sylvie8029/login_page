@@ -81,16 +81,20 @@ class App extends Component {
                 </label>
                 <input className="login-2--panel--form-control-input" />
               </div>
-              <div className="login-2--panel--form-control-checkbox-group">
+              <div className="login-2--panel--form-checkbox-group">
                 <input
                   type="checkbox"
-                  className="login-2--panel--form-checkbox"
+                  className="login-2--panel--form-checkbox-group-checkbox"
                 />
-                <span />Remember Me
+                <span className="login-2--panel--form-checkbox-group-text">
+                  Remember Me
+                </span>
               </div>
               <div className="login-2--panel--form-button-container">
                 <button className="login-2--panel--form-button-container--button">
-                  Login
+                  <span className="login-2--panel--form-button-container--text">
+                    Login
+                  </span>
                 </button>
               </div>
             </form>

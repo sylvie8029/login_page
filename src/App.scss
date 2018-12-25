@@ -67,21 +67,6 @@ $default-color: rgb(58, 56, 56);
   }
 }
 
-// @media (max-width: 300px) {
-//   .login {
-//     background-color: $default-color;
-//     height: 30em;
-//     &--panel {
-//       background-color: green;
-//       &--form {
-//         &-control {
-//           margin-top: 0.5em;
-//         }
-//       }
-//     }
-//   }
-// }
-
 .container {
   display: flex;
 }
@@ -99,7 +84,7 @@ $default-color: rgb(58, 56, 56);
       border: 1px dotted orange;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      // justify-content: space-evenly;
     }
     &--header {
       background: green;
@@ -114,14 +99,47 @@ $default-color: rgb(58, 56, 56);
     }
     &--form {
       background: yellowgreen;
-      height: 120px;
+      height: 260px;
+      justify-content: space-around;
+
       &-control {
-        display: flex;
-      }
-      &-control-label {
         flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        &-label {
+          font-size: 1em;
+          padding: 0.2em 0;
+        }
+        &-input {
+          height: 2.5em;
+
+          background: red;
+        }
       }
-      // &-control-check
+      &-checkbox-group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        &-checkbox {
+          font-size: 1em;
+        }
+        &-text {
+          font-size: 0.8em;
+        }
+      }
+      &-button-container {
+        border: solid;
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        &--button {
+          background-color: olivedrab;
+          height: 2em;
+          border: dotted;
+          // flex-grow: 1;
+          // width: ;
+        }
+      }
     }
     &--footer {
       display: flex;
