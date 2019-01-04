@@ -90,13 +90,7 @@ class App extends Component {
                   Remember Me
                 </span>
               </div>
-              <div className="login-2--panel--form-button-container">
-                <button className="login-2--panel--form-button-container--button">
-                  <span className="login-2--panel--form-button-container--text">
-                    Login
-                  </span>
-                </button>
-              </div>
+              <div className="login-2--panel--form-button-container" />
             </form>
             <footer className="login-2--panel--footer">
               <a
